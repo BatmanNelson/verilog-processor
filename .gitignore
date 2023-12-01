@@ -1,0 +1,7 @@
+# Cache and other temp files
+verilog-processer.cache/
+verilog-processer.hw/
+verilog-processer.ip_user_files/
+verilog-processer.runs/
+verilog-processer.sim/
+verilog-processer.xpr
