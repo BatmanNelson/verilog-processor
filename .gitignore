@@ -1,12 +1,8 @@
 # Cache and other temp files
 verilog-processor.cache/
-
 verilog-processor.hw/
-
 verilog-processor.ip_user_files/
-
 verilog-processor.runs/
-
 verilog-processor.sim/
 
 verilog-processor.xpr
