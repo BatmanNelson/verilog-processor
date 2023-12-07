@@ -17,5 +17,3 @@ Only source code, Vivado and Basys 3 file need to be generated to run.
 | 0111          | negate        | -             | 11:0          | ~11:0 + 1'b1  | In 2's comp   |
 | 1000          | load          | 11:8          | 7:0           | load data     |               |
 | 1001          | store         | 11:8          | 7:0           | store data    |               |
-
-### This is the development branch, push all additions here
