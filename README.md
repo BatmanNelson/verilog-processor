@@ -36,7 +36,7 @@ This operation adds two 6-bit numbers in 2's complement notation.
 | 31 + 1   | 011111            | 000001            | `0000 011111 000001` | `0100000`      | `100000`        | Yes      |
 | -32 + -1 | 100000            | 111111            | `0000 000101 001001` | `1011111`      | `011111`        | Yes      |
 
-Limitations:
+#### Limitations:
 
 If the result of the addition is greater than 31 or less than -32, an overflow occurs.
 
@@ -49,7 +49,7 @@ This operation subtracts two 6-bit numbers in 2's complement notation.
 | -32 - 1  | 100000            | 000001            | `0001 100000 000001` | `1011111`      | `011111`      | 31      | Yes      |
 | 28 - -4  | 111000            | 111100            | `0001 111000 111100` | `0100000`      | `100000`      | -32     | Yes      |
 
-Limitations:
+#### Limitations:
 
 If the result of the subtraction is greater than 31 or less than -32, an overflow occurs.
 
@@ -63,7 +63,7 @@ This operation shifts all of the bits in the 12-bit input one bit to the left.
 | 101010101010 | `0010 101010101010` | `010101010100` | ???     |
 | 010101010101 | `0010 010101010101` | `101010101010` | ???     |
 
-Limitations:
+#### Limitations:
 
 The right most bit will be set to a 0 and the left most bit of the input will be lost.
 
@@ -77,7 +77,7 @@ This operation shifts all of the bits in the 12-bit input one bit to the right.
 | 101010101010 | `0011 101010101010` | `010101010101` | ???     |
 | 010101010101 | `0011 010101010101` | `001010101010` | ???     |
 
-Limitations:
+#### Limitations:
 
 The left most bit will be set to a 0 and the right most bit of the input will be lost.
 
@@ -91,7 +91,7 @@ This operation multiplies two 6-bit integers in 2's complement notation.
 | -16 * 2  | 110000            | 000010            | `0100 110000 000010` | `100000`       | `100000`      | -32     | No       |
 | 16 * 2   | 010000            | 000010            | `0100 010000 000010` | `0100000`      | `000000`      | 0       | Yes      |
 
-Limitations:
+#### Limitations:
 
 The value -32 must not be used as an input due to the value being negated for multiplication which results in an overflow.
 
@@ -110,7 +110,7 @@ This operation multiplies two 6-bit integers in 2's complement notation.
 | -32 / 0  | 100000            | 000000            | `0101 100000 000000` | Undefined      | `100001`      | -1      | Yes      |
 | 15 / 4   | 001111            | 000100            | `0101 001111 000100` | `000011`       | `000011`      | 3       | No       |
 
-Limitations:
+#### Limitations:
 
 Any digits past the decimal point will be truncated. Rounding does not occur.
 
