@@ -15,7 +15,7 @@ Only source code, Vivado and Basys 3 file need to be generated to run.
 | 0101          | divide_6bit   | 11:0          | 11:6 / 5:0    | 2's comp      |
 | 0110          | not           | 11:0          | ~11:0         | Unsigned      |
 | 0111          | negate        | 11:0          | ~11:0 + 1'b1  | 2's comp      |
-| 1000          | display       | 7:0           | 11:0          | 2's comp      |
+| 1000          | display       | 11:0          | 11:0          | 2's comp      |
 
 ## Examples and additional information
 Examples of each operation as well as more detailed limitations of each operation are shown below.
