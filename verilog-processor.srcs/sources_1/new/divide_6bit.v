@@ -20,7 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-// -32 doesnt work
 module divide_6bit(
     input [5:0] x,
     input [5:0] y,
@@ -69,6 +68,8 @@ module divide_6bit(
         end
     end
 
-    assign div_by_0 = ~(y[5] | y[4] | y[3] | y[2] | y[1] | y[0]);
+    // -32 doesnt work
+    // Dividing by zero or using -32
+    assign div_by_0 = ~(y[5] | y[4] | y[3] | y[2] | y[1] | y[0]) | (x == 6'b100000) | (y == 6'b100000);
 
 endmodule

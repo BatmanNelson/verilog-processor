@@ -20,7 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-// -32 doesnt work
 module multiply_6bit(
     input [5:0] x,
     input [5:0] y,
@@ -53,13 +52,15 @@ module multiply_6bit(
         end
 
         if (out_sign) begin
-            out = ~temp[4:0] + 1'b1;
+            out = ~temp[5:0] + 1'b1;
         end
         else begin
             out = temp[4:0];
         end
     end
 
-    assign overflow = temp[5] | temp[6] | temp[7] | temp[8] | temp[9];
+    // -32 doesnt work
+    // Overflow or using -32
+    assign overflow = (temp[5:0] > 6'b100000) | (temp[5] & ~out_sign) | temp[6] | temp[7] | temp[8] | temp[9] | (x == 6'b100000) | (y == 6'b100000);
 
 endmodule
