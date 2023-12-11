@@ -1,7 +1,7 @@
 # Verilog Processor
 Digital systems final project, a processor coded in Verilog for Basys 3 FPGA.
 
-Only source code, Vivado and Basys 3 file need to be generated to run.
+Only source code. Vivado files need to be generated to run.
 
 ## Operations
 
