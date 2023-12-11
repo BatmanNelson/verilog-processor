@@ -26,6 +26,9 @@ Overflow is displayed on the 7-segment display as the decimal point. If all of t
 ### Command formatting
 Each command is 16 bits long. The first 4 bits are always the op code of the operation desired. The remaining 12 bits are defined by the operation.
 
+### Running a command
+To run a command, enter the command on the switches. Then, press the center button and result of the operation will be displayed on the leds and 7-segment display.
+
 ### Invalid Op Code
 If an op code that does not have a corresponding operation is used, the 7-segment display will display 404 and all of the leds will light up.
 
