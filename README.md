@@ -1,5 +1,5 @@
 # Verilog Processor
-Digital systems final project, a processor coded in Verilog for Basys 3 FPGA.
+Digital systems final project Fall 2023, a processor coded in Verilog for Basys 3 FPGA.
 
 Only source code. Vivado files need to be generated to run.
 
